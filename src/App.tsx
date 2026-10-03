@@ -464,8 +464,8 @@ function Testimonials() {
   }>
   return (
     <div className="three-grid">
-      {items.map((item) => (
-        <article className="testimonial" key={item.name}>
+      {items.map((item, index) => (
+        <article className="testimonial" key={`${item.name}-${index}`}>
           <span className="quote">“</span>
           <blockquote>{item.quote}</blockquote>
           <div className="person">
