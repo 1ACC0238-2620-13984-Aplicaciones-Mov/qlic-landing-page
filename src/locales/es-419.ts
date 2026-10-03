@@ -1,4 +1,4 @@
-import { en } from "./en";
+import { en } from "./en"
 
 export const es419 = {
   ...en,
@@ -21,26 +21,243 @@ export const es419 = {
     ...en.hero,
     eyebrow: "INTELIGENCIA DEL AGUA, MÁS SIMPLE",
     title: "Monitoreo inteligente del agua para hogares y negocios",
-    description: "Controla el volumen, la presión y la temperatura en tiempo real con alertas y reportes claros.",
+    description:
+      "Controla el volumen, la presión y la temperatura en tiempo real con alertas y reportes claros.",
     primaryCta: "Comenzar",
     secondaryCta: "Ver cómo funciona",
-    chips: { realtime: "Datos en tiempo real", alerts: "Alertas inteligentes", reports: "Reportes claros" },
+    chips: {
+      realtime: "Datos en tiempo real",
+      alerts: "Alertas inteligentes",
+      reports: "Reportes claros",
+    },
   },
-  dashboard: { ...en.dashboard, greeting: "BUENOS DÍAS", title: "Tu agua de un vistazo", today: "Hoy", liveFlow: "FLUJO EN VIVO", pressure: "PRESIÓN", temperature: "TEMPERATURA", flowUnit: "L/min", pressureUnit: "bar", temperatureUnit: "C", change: "↓ 12% hoy", healthy: "Rango saludable", normal: "Normal", consumption: "Consumo de agua", period: "Últimos 7 días", days: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"] },
+  dashboard: {
+    ...en.dashboard,
+    greeting: "BUENOS DÍAS",
+    title: "Tu agua de un vistazo",
+    today: "Hoy",
+    liveFlow: "FLUJO EN VIVO",
+    pressure: "PRESIÓN",
+    temperature: "TEMPERATURA",
+    flowUnit: "L/min",
+    pressureUnit: "bar",
+    temperatureUnit: "C",
+    change: "↓ 12% hoy",
+    healthy: "Rango saludable",
+    normal: "Normal",
+    consumption: "Consumo de agua",
+    period: "Últimos 7 días",
+    days: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+  },
   sections: {
-    visibility: { ...en.sections.visibility, eyebrow: "POR QUÉ QLIC", title: "Visibilidad total de tu agua", intro: "Claridad en tiempo real para convertir los datos diarios del agua en decisiones seguras.", cards: { liveConsumption: { title: "Consumo en vivo", text: "Sigue cada litro mientras circula por tu propiedad." }, pressureHealth: { title: "Salud de la presión", text: "Mantén la presión en un rango saludable y detecta cambios temprano." }, temperatureControl: { title: "Control de temperatura", text: "Monitorea la temperatura del agua con una vista clara y continua." } } },
-    about: { ...en.sections.about, eyebrow: "NUESTRO PROPÓSITO", title: "Nosotros", cards: { conservation: { title: "Creado para conservar", text: "Inteligencia simple del agua para que cada propiedad use menos." }, connected: { title: "Conectado desde el diseño", text: "El monitoreo IoT mantiene tus espacios visibles todo el tiempo." }, impact: { title: "Impacto medible", text: "Convierte datos claros en mejores decisiones para tu presupuesto y el planeta." } } },
-    team: { eyebrow: "LAS PERSONAS DETRÁS DE QLIC", title: "Nuestro equipo", intro: "Cuatro personas construyendo una forma más clara de gestionar el agua." },
-    solutions: { eyebrow: "HECHO PARA TU ESPACIO", title: "Soluciones por segmento", homes: { title: "Hogares", text: "Detecta fugas temprano, entiende tu consumo diario y crea mejores hábitos.", link: "Explorar solución" }, businesses: { title: "Negocios", text: "Controla los costos de tu operación y mantén visible cada ubicación.", link: "Explorar solución" } },
-    features: { eyebrow: "TODO LO QUE NECESITAS", title: "Funciones principales", cards: { monitoring: { title: "Monitoreo en tiempo real", text: "Consulta volumen, presión y temperatura desde un solo panel." }, alerts: { title: "Alertas inteligentes de fugas", text: "Recibe una notificación cuando Qlic detecte un uso inusual o una posible fuga." }, reports: { title: "Reportes accionables", text: "Compara el consumo y descubre patrones con reportes periódicos sencillos." } } },
-    product: { eyebrow: "QLIC EN ACCIÓN", title: "Sobre el producto", label: "CONOCE QLIC", headline: "Cada gota, claramente entendida.", duration: "01:48", play: "Reproducir video del producto" },
-    stories: { eyebrow: "HISTORIAS DE CLIENTES", title: "Lo que valoran nuestros usuarios", items: [{ quote: "La detección temprana permite investigar una fuga antes de que llegue el siguiente recibo.", name: "Hallazgo ilustrativo", role: "Hogares y Familias" }, { quote: "Un panel sencillo ayuda a revisar el consumo de toda la operación sin depender de una libreta.", name: "Hallazgo ilustrativo", role: "PYMES y Comercios" }, { quote: "Las alertas deben ser claras, oportunas y mostrar dónde ocurre el problema.", name: "Hallazgo de entrevista", role: "Necesidad validada" }] },
-    pricing: { eyebrow: "PRECIOS SIMPLES Y FLEXIBLES", title: "Planes de suscripción", basic: { name: "Plan Básico", audience: "Para departamentos y casas", features: { oneSensor: "1 sensor conectado", liveMonitoring: "Monitoreo en vivo", leakAlerts: "Alertas de fugas y consumo" }, cta: "Elegir plan" }, pro: { name: "Plan Gestión Pro", audience: "Para tiendas y equipos en crecimiento", badge: "MÁS POPULAR", features: { threeSensors: "Hasta 3 sensores", customAlerts: "Reglas de alerta personalizadas", weeklyReports: "Reportes semanales avanzados" }, cta: "Elegir plan" } },
-    faq: { eyebrow: "LO QUE DEBES SABER", title: "Preguntas frecuentes", items: [{ question: "¿Cómo mide Qlic mi consumo de agua?", answer: "Un sensor IoT compacto mide el volumen, la presión y la temperatura, y envía los datos de forma segura a tu panel." }, { question: "¿Sabré cuándo hay una fuga?", answer: "Sí. Qlic identifica patrones inusuales y envía una alerta clara para que puedas investigar rápidamente." }, { question: "¿Necesito una instalación profesional?", answer: "Depende de tus conexiones. Nuestro equipo recomendará la opción más sencilla para tu propiedad." }] },
+    visibility: {
+      ...en.sections.visibility,
+      eyebrow: "POR QUÉ QLIC",
+      title: "Visibilidad total de tu agua",
+      intro:
+        "Claridad en tiempo real para convertir los datos diarios del agua en decisiones seguras.",
+      cards: {
+        liveConsumption: {
+          title: "Consumo en vivo",
+          text: "Sigue cada litro mientras circula por tu propiedad.",
+        },
+        pressureHealth: {
+          title: "Salud de la presión",
+          text: "Mantén la presión en un rango saludable y detecta cambios temprano.",
+        },
+        temperatureControl: {
+          title: "Control de temperatura",
+          text: "Monitorea la temperatura del agua con una vista clara y continua.",
+        },
+      },
+    },
+    about: {
+      ...en.sections.about,
+      eyebrow: "NUESTRO PROPÓSITO",
+      title: "Nosotros",
+      cards: {
+        conservation: {
+          title: "Creado para conservar",
+          text: "Inteligencia simple del agua para que cada propiedad use menos.",
+        },
+        connected: {
+          title: "Conectado desde el diseño",
+          text: "El monitoreo IoT mantiene tus espacios visibles todo el tiempo.",
+        },
+        impact: {
+          title: "Impacto medible",
+          text: "Convierte datos claros en mejores decisiones para tu presupuesto y el planeta.",
+        },
+      },
+    },
+    team: {
+      eyebrow: "LAS PERSONAS DETRÁS DE QLIC",
+      title: "Nuestro equipo",
+      intro:
+        "Cuatro personas construyendo una forma más clara de gestionar el agua.",
+    },
+    solutions: {
+      eyebrow: "HECHO PARA TU ESPACIO",
+      title: "Soluciones por segmento",
+      homes: {
+        title: "Hogares",
+        text: "Detecta fugas temprano, entiende tu consumo diario y crea mejores hábitos.",
+        link: "Explorar solución",
+      },
+      businesses: {
+        title: "Negocios",
+        text: "Controla los costos de tu operación y mantén visible cada ubicación.",
+        link: "Explorar solución",
+      },
+    },
+    features: {
+      eyebrow: "TODO LO QUE NECESITAS",
+      title: "Funciones principales",
+      cards: {
+        monitoring: {
+          title: "Monitoreo en tiempo real",
+          text: "Consulta volumen, presión y temperatura desde un solo panel.",
+        },
+        alerts: {
+          title: "Alertas inteligentes de fugas",
+          text: "Recibe una notificación cuando Qlic detecte un uso inusual o una posible fuga.",
+        },
+        reports: {
+          title: "Reportes accionables",
+          text: "Compara el consumo y descubre patrones con reportes periódicos sencillos.",
+        },
+      },
+    },
+    product: {
+      eyebrow: "QLIC EN ACCIÓN",
+      title: "Sobre el producto",
+      label: "CONOCE QLIC",
+      headline: "Cada gota, claramente entendida.",
+      duration: "01:48",
+      play: "Reproducir video del producto",
+    },
+    stories: {
+      eyebrow: "HISTORIAS DE CLIENTES",
+      title: "Lo que valoran nuestros usuarios",
+      items: [
+        {
+          quote:
+            "La detección temprana permite investigar una fuga antes de que llegue el siguiente recibo.",
+          name: "Hallazgo ilustrativo",
+          role: "Hogares y Familias",
+        },
+        {
+          quote:
+            "Un panel sencillo ayuda a revisar el consumo de toda la operación sin depender de una libreta.",
+          name: "Hallazgo ilustrativo",
+          role: "PYMES y Comercios",
+        },
+        {
+          quote:
+            "Las alertas deben ser claras, oportunas y mostrar dónde ocurre el problema.",
+          name: "Hallazgo de entrevista",
+          role: "Necesidad validada",
+        },
+      ],
+    },
+    pricing: {
+      eyebrow: "PRECIOS SIMPLES Y FLEXIBLES",
+      title: "Planes de suscripción",
+      month: "/ mes",
+      basic: {
+        name: "Plan Básico",
+        audience: "Para departamentos y casas",
+        features: {
+          oneSensor: "1 sensor conectado",
+          liveMonitoring: "Monitoreo en vivo",
+          leakAlerts: "Alertas de fugas y consumo",
+        },
+        cta: "Elegir plan",
+      },
+      pro: {
+        name: "Plan Gestión Pro",
+        audience: "Para tiendas y equipos en crecimiento",
+        badge: "MÁS POPULAR",
+        features: {
+          threeSensors: "Hasta 3 sensores",
+          customAlerts: "Reglas de alerta personalizadas",
+          weeklyReports: "Reportes semanales avanzados",
+        },
+        cta: "Elegir plan",
+      },
+    },
+    faq: {
+      eyebrow: "LO QUE DEBES SABER",
+      title: "Preguntas frecuentes",
+      items: [
+        {
+          question: "¿Cómo mide Qlic mi consumo de agua?",
+          answer:
+            "Un sensor IoT compacto mide el volumen, la presión y la temperatura, y envía los datos de forma segura a tu panel.",
+        },
+        {
+          question: "¿Sabré cuándo hay una fuga?",
+          answer:
+            "Sí. Qlic identifica patrones inusuales y envía una alerta clara para que puedas investigar rápidamente.",
+        },
+        {
+          question: "¿Necesito una instalación profesional?",
+          answer:
+            "Depende de tus conexiones. Nuestro equipo recomendará la opción más sencilla para tu propiedad.",
+        },
+      ],
+    },
   },
-  team: { members: { aaron: "Planificación del Sprint y despliegue", ayrton: "Implementación de la Landing Page", sebasthian: "Product Backlog y estimaciones", alessandro: "Colaboración y apoyo de interfaz" } },
-  form: { eyebrow: "HABLEMOS", title: "Contactar ventas", intro: "Cuéntanos sobre tu operación y un especialista se pondrá en contacto contigo.", name: "Nombre", namePlaceholder: "Tu nombre", email: "Correo electrónico", emailPlaceholder: "tu@empresa.com", message: "Mensaje", messagePlaceholder: "Cuéntanos sobre tus necesidades de monitoreo de agua", submit: "Enviar", errors: { name: "Ingresa tu nombre.", email: "Ingresa un correo válido.", message: "Ingresa un mensaje." }, success: "Mensaje listo. Nos pondremos en contacto contigo." },
-  footer: { description: "Un uso más inteligente del agua empieza con mejor visibilidad.", company: "Empresa", help: "Ayuda", community: "Comunidad", follow: "Síguenos", about: "Nosotros", team: "Equipo", contact: "Contacto", support: "Soporte", installation: "Instalación", faq: "Preguntas frecuentes", stories: "Historias del agua", partners: "Aliados", news: "Noticias", terms: "Términos y condiciones", rights: "©2026 Qlic. Todos los derechos reservados" },
-  meta: { title: "Qlic | Monitoreo inteligente del agua", description: "Monitorea el consumo de agua, detecta patrones inusuales y actúa con alertas claras para tu hogar o negocio." },
+  team: {
+    members: {
+      aaron: "Planificación del Sprint y despliegue",
+      ayrton: "Implementación de la Landing Page",
+      sebasthian: "Product Backlog y estimaciones",
+      alessandro: "Colaboración y apoyo de interfaz",
+    },
+  },
+  form: {
+    eyebrow: "HABLEMOS",
+    title: "Contactar ventas",
+    intro:
+      "Cuéntanos sobre tu operación y un especialista se pondrá en contacto contigo.",
+    name: "Nombre",
+    namePlaceholder: "Tu nombre",
+    email: "Correo electrónico",
+    emailPlaceholder: "tu@empresa.com",
+    message: "Mensaje",
+    messagePlaceholder: "Cuéntanos sobre tus necesidades de monitoreo de agua",
+    submit: "Enviar",
+    errors: {
+      name: "Ingresa tu nombre.",
+      email: "Ingresa un correo válido.",
+      message: "Ingresa un mensaje.",
+    },
+    success: "Mensaje listo. Nos pondremos en contacto contigo.",
+  },
+  footer: {
+    description:
+      "Un uso más inteligente del agua empieza con mejor visibilidad.",
+    company: "Empresa",
+    help: "Ayuda",
+    community: "Comunidad",
+    follow: "Síguenos",
+    about: "Nosotros",
+    team: "Equipo",
+    contact: "Contacto",
+    support: "Soporte",
+    installation: "Instalación",
+    faq: "Preguntas frecuentes",
+    stories: "Historias del agua",
+    partners: "Aliados",
+    news: "Noticias",
+    terms: "Términos y condiciones",
+    rights: "©2026 Qlic. Todos los derechos reservados",
+  },
+  meta: {
+    title: "Qlic | Monitoreo inteligente del agua",
+    description:
+      "Monitorea el consumo de agua, detecta patrones inusuales y actúa con alertas claras para tu hogar o negocio.",
+  },
   common: { arrow: "Flecha", externalLink: "Enlace externo" },
-} as const;
+} as const
