@@ -579,11 +579,12 @@ function ContactForm() {
         {t("form.name")}
         <input
           aria-invalid={errors.name}
+          aria-describedby={errors.name ? "name-error" : undefined}
           name="name"
           placeholder={t("form.namePlaceholder")}
         />
         {errors.name && (
-          <span className="field-error">
+          <span className="field-error" id="name-error">
             <Icon name="alert" size={14} />
             {t("form.errors.name")}
           </span>
@@ -593,12 +594,13 @@ function ContactForm() {
         {t("form.email")}
         <input
           aria-invalid={errors.email}
+          aria-describedby={errors.email ? "email-error" : undefined}
           name="email"
           placeholder={t("form.emailPlaceholder")}
           type="email"
         />
         {errors.email && (
-          <span className="field-error">
+          <span className="field-error" id="email-error">
             <Icon name="alert" size={14} />
             {t("form.errors.email")}
           </span>
@@ -608,12 +610,13 @@ function ContactForm() {
         {t("form.message")}
         <textarea
           aria-invalid={errors.message}
+          aria-describedby={errors.message ? "message-error" : undefined}
           name="message"
           placeholder={t("form.messagePlaceholder")}
           rows={4}
         />
         {errors.message && (
-          <span className="field-error">
+          <span className="field-error" id="message-error">
             <Icon name="alert" size={14} />
             {t("form.errors.message")}
           </span>
