@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Qlic Smart Water Monitoring</title>
+  <desc id="description">Smart water monitoring for homes and businesses.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091d5d"/>
+      <stop offset="1" stop-color="#0c4afd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="980" cy="110" r="220" fill="#5780ff" opacity=".32"/>
+  <path d="M112 174c-25 34-52 70-52 108a52 52 0 0 0 104 0c0-38-27-74-52-108Z" fill="#fff" opacity=".95"/>
+  <text x="194" y="282" fill="#fff" font-family="Arial, sans-serif" font-size="92" font-weight="700">Qlic</text>
+  <text x="116" y="408" fill="#dbe5ff" font-family="Arial, sans-serif" font-size="44">Smart water monitoring</text>
+  <text x="116" y="472" fill="#fff" font-family="Arial, sans-serif" font-size="30" opacity=".86">Clear data. Timely alerts. Better decisions.</text>
+</svg>

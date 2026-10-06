@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { teamMembers } from "./content"
+import { teamMembers } from "./content.js"
 
 describe("Qlic team content", () => {
   it("contains the four project members and their responsibilities", () => {
@@ -10,8 +10,6 @@ describe("Qlic team content", () => {
       "Conde Huashuayo, Sebasthian Alex",
       "Condori Lozano, Alessandro Ramiro",
     ])
-    expect(
-      teamMembers.every((member) => member.responsibility.length > 0),
-    ).toBe(true)
+    expect(teamMembers.every((member) => member.responsibilityKey)).toBe(true)
   })
 })
